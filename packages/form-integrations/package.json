@@ -1,0 +1,36 @@
+{
+	"name": "@quillforms/form-integrations",
+	"version": "3.0.8",
+	"description": "Form integrations",
+	"author": "Mohamed Magdy <md.magdy.sa@gmail.com> (https://github.com/mdmag)",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"quillforms",
+		"integrations"
+	],
+	"homepage": "https://github.com/quillforms/quillforms/tree/master/packages/form-integrations/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/quillforms/quillforms.git",
+		"directory": "packages/shared-data"
+	},
+	"types": "build-types",
+	"bugs": {
+		"url": "https://github.com/quillforms/quillforms/issues"
+	},
+	"main": "build/index.js",
+	"module": "build-module/index.js",
+	"dependencies": {
+		"@babel/runtime": "^7.9.2",
+		"@quillforms/navigation": "file:../navigation",
+		"@wordpress/api-fetch": "^6.29.0",
+		"@wordpress/components": "^27.3.0",
+		"@wordpress/data": "^9.2.0",
+		"@wordpress/i18n": "^4.32.0",
+		"react-dnd": "15.1.2"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"gitHead": "a9dcd96dd59a8774ddfb52838ac1a88ab3dae142"
+}

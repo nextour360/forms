@@ -1,0 +1,55 @@
+{
+	"name": "@quillforms/block-editor",
+	"version": "3.0.41",
+	"description": "Quill forms block editor",
+	"author": "Mohamed Magdy <md.magdy.sa@gmail.com> (https://github.com/mdmag)",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"quillforms",
+		"block",
+		"editor"
+	],
+	"homepage": "https://github.com/quillforms/quillforms/tree/master/packages/block-editor/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/quillforms/quillforms.git",
+		"directory": "packages/block-editor"
+	},
+	"bugs": {
+		"url": "https://github.com/quillforms/quillforms/issues"
+	},
+	"main": "build/index.js",
+	"module": "build-module/index.js",
+	"types": "build-types",
+	"dependencies": {
+		"@babel/runtime": "^7.9.6",
+		"@quillforms/admin-components": "file:../admin-components",
+		"@quillforms/config": "file:../config",
+		"@quillforms/theme-editor": "file:../theme-editor",
+		"@quillforms/types": "file:../types",
+		"@wordpress/data": "^9.2.0",
+		"@wordpress/element": "^5.9.0",
+		"@wordpress/icons": "^9.23.0",
+		"classnames": "^2.3.1",
+		"emoji-mart": "^3.0.1",
+		"is-url": "^1.2.4",
+		"lodash": "^4.17.21",
+		"react-autosize-textarea": "^7.1.0",
+		"react-confirm-alert": "^2.7.0",
+		"react-dnd": "15.1.2",
+		"react-intersection-observer": "^8.32.0",
+		"rememo": "^4.0.2",
+		"slate": "^0.94.1",
+		"slate-history": "0.86.0",
+		"slate-hyperscript": "0.77.0",
+		"slate-react": "^0.97.2"
+	},
+	"peerDependencies": {
+		"react": "^16.8.5 || ^17.0.0 || ^18.0.0",
+		"react-dom": "^16.8.5 || ^17.0.0 || ^18.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+}

@@ -1,0 +1,43 @@
+{
+	"name": "@quillforms/utils",
+	"version": "3.0.23",
+	"description": "Utils package for defining some helpful functions",
+	"author": "Mohamed Magdy <md.magdy.sa@gmail.com> (https://github.com/mdmag)",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"quillforms",
+		"utils"
+	],
+	"homepage": "https://github.com/quillforms/quillforms/tree/master/packages/utils/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/quillforms/quillforms.git",
+		"directory": "packages/utils"
+	},
+	"bugs": {
+		"url": "https://github.com/quillforms/quillforms/issues"
+	},
+	"main": "build/index.js",
+	"module": "build-module/index.js",
+	"sideEffects": false,
+	"types": "build-types",
+	"dependencies": {
+		"@babel/runtime": "^7.16.0",
+		"@emotion/css": "^11.10.5",
+		"@emotion/react": "^11.10.5",
+		"@emotion/serialize": "^1.1.1",
+		"@emotion/utils": "^1.2.0",
+		"@quillforms/config": "^3.0.20",
+		"@quillforms/types": "^3.0.19",
+		"lodash": "^4.17.21",
+		"react-dnd": "15.1.2"
+	},
+	"peerDependencies": {
+		"react": "^16.8.5 || ^17.0.0 || ^18.0.0",
+		"react-dom": "^16.8.5 || ^17.0.0 || ^18.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+}

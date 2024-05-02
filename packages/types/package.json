@@ -1,0 +1,33 @@
+{
+	"name": "@quillforms/types",
+	"version": "3.0.19",
+	"description": "Types package is to define some certain shared types between packages",
+	"author": "Mohamed Magdy <mohamed@quillforms.com> (https://github.com/mdmag)",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"quillforms",
+		"types"
+	],
+	"homepage": "https://github.com/quillforms/quillforms/tree/master/packages/types/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/quillforms/quillforms.git",
+		"directory": "packages/types"
+	},
+	"bugs": {
+		"url": "https://github.com/quillforms/quillforms/issues"
+	},
+	"main": "build/index.js",
+	"module": "build-module/index.js",
+	"sideEffects": false,
+	"types": "build-types",
+	"dependencies": {
+		"@babel/runtime": "^7.9.2",
+		"react-dnd": "15.1.2",
+		"utility-types": "^3.10.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+}

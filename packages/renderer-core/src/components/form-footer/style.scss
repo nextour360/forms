@@ -1,0 +1,66 @@
+.renderer-core-form-flow__wrapper .renderer-core-form-flow{
+	.renderer-components-form-footer {
+		position: absolute;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: center;
+		z-index:2222;
+		bottom: 0;
+		right: 0;
+		left: 0;
+
+		.renderer-components-form-footer__inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			@media(max-width: $break-small){
+				justify-content: flex-start;
+				flex-direction: row-reverse;
+			}
+			padding: 10px 20px;
+
+		}
+		&.hidden {
+			display: none;
+		}
+
+		[class^="renderer-core-powered-by-branding"] {
+			display: block !important;
+			visibility: visible !important;
+			opacity: 1 !important;
+			margin-left: 6px;
+
+			a {
+				display: block !important;
+				visibility: visible !important;
+				opacity: 1 !important;
+			}
+		}	
+
+		.renderer-core-correct-incorrect-result {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right:0;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			// green background
+			// this div will be in bottom by default. We want to transform it from bottom to top
+			transform: translateY(100%);
+			transition: transform 0.3s ease-in-out;
+
+			&.active {
+				transform: translateY(0);
+			}
+			
+		}
+	}
+}

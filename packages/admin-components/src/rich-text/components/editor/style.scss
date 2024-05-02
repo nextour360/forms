@@ -1,0 +1,27 @@
+.richtext__editor {
+	[contenteditable] {
+		-webkit-user-select: text;
+		user-select: text;
+	}
+}
+
+.rich-text-merge-tag-list {
+	& {
+		width: 274px;
+		padding: 20px;
+		max-height: 300px;
+		overflow-y: scroll;
+	}
+
+	.admin-components-recall-information__heading,
+	.admin-components-recall-information__no-blocks-heading {
+		margin: 0 0 10px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.admin-components-recall-information__heading,
+	.admin-components-recall-information__no-blocks-content {
+		font-size: 13px;
+	}
+}

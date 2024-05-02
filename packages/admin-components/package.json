@@ -1,0 +1,63 @@
+{
+	"name": "@quillforms/admin-components",
+	"version": "3.0.36",
+	"description": "Quill forms admin components",
+	"author": "Mohamed Magdy <md.magdy.sa@gmail.com> (https://github.com/mdmag)",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"quillforms",
+		"admin",
+		"components"
+	],
+	"homepage": "https://github.com/quillforms/quillforms/tree/master/packages/admin-components/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/quillforms/quillforms.git",
+		"directory": "packages/admin-components"
+	},
+	"bugs": {
+		"url": "https://github.com/quillforms/quillforms/issues"
+	},
+	"main": "build/index.js",
+	"module": "build-module/index.js",
+	"engines": {
+		"node": ">=12"
+	},
+	"types": "build-types",
+	"sideEffects": false,
+	"dependencies": {
+		"@babel/runtime": "^7.16.0",
+		"@quillforms/blocks": "^4.1.6",
+		"@quillforms/config": "^3.0.20",
+		"@quillforms/types": "^3.0.19",
+		"@wordpress/components": "^27.3.0",
+		"@wordpress/icons": "^9.23.0",
+		"@wordpress/media-utils": "^4.23.0",
+		"classnames": "^2.3.1",
+		"cmdk": "^0.2.0",
+		"downshift": "^6.1.7",
+		"emotion": "10.0.27",
+		"escape-html": "^1.0.3",
+		"gradient-parser": "^0.1.5",
+		"is-url": "^1.2.4",
+		"lodash": "^4.17.21",
+		"react-beautiful-dnd": "^13.1.0",
+		"react-loader-spinner": "^5.1.7-beta.1",
+		"react-select": "^5.8.0",
+		"react-window": "^1.8.6",
+		"slate": "^0.94.1",
+		"slate-history": "0.86.0",
+		"slate-hyperscript": "0.77.0",
+		"slate-react": "^0.98.3",
+		"tailwind-merge": "^1.14.0",
+		"tinycolor2": "^1.4.1"
+	},
+	"peerDependencies": {
+		"react": "^16.8.5 || ^17.0.0 || ^18.0.0",
+		"react-dom": "^16.8.5 || ^17.0.0 || ^18.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+}

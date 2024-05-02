@@ -1,0 +1,56 @@
+.block-editor-block-toolbar {
+	& {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		font-size: 20px;
+		align-items: center;
+		color: #949191;
+		visibility: hidden;
+	}
+
+	> div,
+	.block-editor-block-toolbar__merge-tag-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+
+	> div:hover {
+		background: #e3e3e3;
+		color: #545856;
+
+		svg {
+			fill: #545856;
+		}
+	}
+
+	svg {
+		fill: #949191;
+		width: 20px;
+		height: 20px;
+	}
+
+	#more-options-menu li {
+		padding: 5px 12px !important;
+		font-size: 12px !important;
+		min-height: auto !important;
+	}
+	#more-options-menu li svg {
+		width: 20px;
+		height: 20px;
+	}
+}
+.qf-custom-modal {
+	margin-left: 0 !important;
+	background-color: transparent !important;
+	z-index: 5;
+
+	.components-modal__frame {
+		margin-left: 0 !important;
+	}
+}

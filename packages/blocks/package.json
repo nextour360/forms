@@ -1,0 +1,41 @@
+{
+	"name": "@quillforms/blocks",
+	"version": "4.1.6",
+	"description": "Block api for Quill forms",
+	"author": "Mohamed Magdy <md.magdy.sa@gmail.com> (https://github.com/mdmag)",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"quillforms",
+		"block",
+		"editor"
+	],
+	"homepage": "https://github.com/quillforms/quillforms/tree/master/packages/blocks/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/quillforms/quillforms.git",
+		"directory": "packages/blocks"
+	},
+	"bugs": {
+		"url": "https://github.com/quillforms/quillforms/issues"
+	},
+	"types": "build-types",
+	"main": "build/index.js",
+	"module": "build-module/index.js",
+	"dependencies": {
+		"@babel/runtime": "^7.16.0",
+		"@quillforms/utils": "^3.0.23",
+		"@wordpress/data": "^9.2.0",
+		"lodash": "^4.17.21",
+		"react-dnd": "15.1.2"
+	},
+	"devDependencies": {
+		"@quillforms/types": "^3.0.19"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"peerDependencies": {
+		"react": "^18.0.0"
+	},
+	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+}

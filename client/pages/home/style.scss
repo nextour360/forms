@@ -1,0 +1,253 @@
+.quillforms-home {
+	.quillforms-home__heading {
+		border-bottom: 1px solid #d8d6d6;
+		padding-bottom: 10px;
+	}
+
+	.quillforms-home__all-forms {
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		.quillforms-home__form-card,
+		.quillforms-home__add-form-card,
+		.quillforms-home__empty-form-card,
+		.quillforms-home__card-loader {
+			width: 175px;
+			margin-right: 40px;
+			margin-bottom: 30px;
+			border-radius: 8px;
+		}
+
+		.quillforms-home__add-form-card,
+		.quillforms-home__empty-form-card,
+		.quillforms-home__card-loader  {
+			overflow: hidden;
+		}
+
+		.quillforms-home__form-card-body-header {
+			overflow: hidden;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+		.quillforms-home__form-card:hover {
+			box-shadow: 0 0.25em 1em rgba(0,0,0,.15);
+		}
+
+		.quillforms-home__form-card {
+			.quillforms-home__form-title {
+				font-size: 16px;
+			}
+		}
+
+		.quillforms-home__form-card-body,
+		.quillforms-home__add-form-card-body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+		}
+
+		.quillforms-home__card-loader,
+		.quillforms-home__form-card {
+			height: 205px;
+		}
+		.quillforms-home__form-card-body,
+		.quillforms-home__card-loader-body {
+			height: 157px;
+		}
+
+		.quillforms-home__form-card-footer {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			padding: 4px 15px;
+		}
+		.quillforms-home__add-form-card-body {
+			height: 205px;
+			font-size: 18px;
+			flex-direction: column;
+			color: #fff;
+			background: linear-gradient(45deg, #4a1dff, #ec3cce);;
+			transition: opacity 0.2s ease-in;
+
+			&:hover {
+				opacity: 0.85;
+			}
+
+			.quillforms-home__add-form-card-icon {
+				fill: #fff;
+				margin-bottom: 10px;
+
+			}
+		}
+
+		.quillforms-home__card-loader-body,
+		.quillforms-home__card-loader-footer-text {
+			position: relative;
+			background-color: #d4d4d4;
+			overflow: hidden;
+		}
+		.quillforms-home__card-loader {
+			box-shadow: none !important;
+		}
+		.quillforms-home__card-loader-footer-text {
+			height: 10px;
+			margin-top: 5px;
+			width: 100%;
+		}
+
+		.quillforms-home__card-loader-body::after,
+		.quillforms-home__card-loader-footer-text::after {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			transform: translateX(-100%);
+			background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .2), transparent);
+			animation: loading 1.5s infinite;
+		}
+
+		@keyframes loading {
+			100% {
+				transform: translateX(100%);
+			}
+		}
+
+		.quillforms-home__empty-form-card {
+			height: 205px;
+			background: transparent;
+			border: 2px dashed rgba(0, 0, 0, 0.22);
+			cursor: inherit;
+		}
+
+
+		
+
+	}
+
+}
+.quillforms-home__add-form-modal-footer {
+	display: flex;
+    justify-content: flex-end;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+
+.create-form-cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 800px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.create-form-cards div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+	width: 250px;
+	margin: 20px;
+	background: #5c22ca;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	span, svg {
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+}
+
+.create-form-cards div:nth-child(1) {
+	background: #e7e5e5;
+	color: #000
+}
+
+.choose-template {
+	height: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+.choose-template__cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+.choose-template__card {
+	width: 214px;
+    cursor: pointer;
+    margin: 20px;
+    background: #eee;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 6%) 0px 2px 12px;
+    overflow: hidden;
+	h3 {
+		display: flex;
+		align-items: center;
+		padding: 0px 10px;
+		font-size: 18px;
+	}
+
+}
+
+.choose-template__card img {
+    width: 214px;
+    height: 169px;
+    object-fit: cover
+}
+.chosen-template {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	
+	.chosen-template__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 400px;
+		height: 100%;
+		padding: 20px;
+		text-align: left;
+		.chosen-template__notes {
+			padding: 10px;
+			background: antiquewhite;
+			border-radius: 5px;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		h2 {
+			font-size: 30px;
+			margin-bottom: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+	}
+	.chosen-template__preview {
+		width: 100%;
+		height: 100%;
+	}
+	.chosen-template__preview iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	.chosen-template__back {
+		position: absolute;
+		top: 80px;
+		left: 20px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+}

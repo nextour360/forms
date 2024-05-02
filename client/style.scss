@@ -1,0 +1,112 @@
+@import "./layout/style.scss";
+#qf-admin-root #qf-admin-root__loader-container > svg {
+	animation: iconPulse 1s 2s infinite;
+}
+@keyframes iconPulse {
+	0% {
+		transform: scaleX(1);
+	}
+
+	50% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+
+	to {
+		transform: scaleX(1);
+	}
+}
+
+body.js.is-fullscreen-mode {
+	// @include break-medium {
+	// Reset the html.wp-topbar padding.
+	// Because this uses negative margins, we have to compensate for the height.
+	margin-top: -$admin-bar-height;
+	height: calc(100% + #{$admin-bar-height});
+	overflow: hidden;
+
+	#adminmenumain,
+	#wpadminbar {
+		display: none;
+	}
+
+	.wrap {
+		margin: 0;
+	}
+
+	#wpcontent,
+	#wpfooter {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	div#wpbody-content {
+		padding-bottom: 0;
+	}
+	#wpfooter {
+		display: none;
+	}
+}
+.components-tab-panel__tabs {
+	background: #f6f6f6;
+	display: flex !important;
+	align-items: center !important;
+	margin-bottom: 20px;
+	padding: 15px 20px;
+	border-radius: 5px;
+}
+.components-tab-panel__tabs-item {
+	height: auto !important;
+	padding: 8px 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+	box-shadow: none !important;
+	border: none !important;
+}
+.components-tab-panel__tabs-item.active-tab {
+	background: #7962d7;
+	color: #fff;
+	height: auto !important;
+}
+.quillforms-layout h1 {
+	color: #6d78d8;
+	border-color: #6d78d83d !important;
+}
+.quillforms-layout #quillforms-builder-page h1 {
+	color: inherit;
+	border-color: inherit !important;
+}
+.components-popover .components-popover__content {
+	//position: absolute;
+	height: auto;
+	overflow-y: auto;
+	background-color: rgb(255, 255, 255);
+	color: rgb(38, 38, 39);
+	border-radius: 8px;
+	box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 6%) 0px 2px 12px;
+	border: none;
+	min-width: 250px !important;
+}
+.components-popover .components-popover__content .components-menu-item__button {
+	box-shadow: none !important;
+}
+.components-popover .components-popover__content .components-menu-item__button .components-menu-item__item {
+	padding-left: 10px !important;
+}
+.components-popover .components-popover__content .components-menu-item__button:hover {
+	background: #eee;
+	color: inherit;
+}
+
+.components-modal__header {
+	height: 54px !important;
+}
+
+
+.components-custom-gradient-picker__gradient-bar .components-custom-gradient-picker__control-point-dropdown {
+	z-index: 11 !important;
+}
+
+// elementor
+#e-admin-top-bar-root:not(.e-admin-top-bar--active)~#wpbody .wrap .page-title-action, #e-admin-top-bar-root:not(.e-admin-top-bar--active)~#wpbody .wrap h1 {
+	display: block
+}

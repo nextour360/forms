@@ -1,0 +1,108 @@
+.qf-admin-sidebar {
+	min-width: 250px;
+    position: fixed;
+    bottom: 0;
+    top: 56px;
+    background: #F8F9FA;
+    padding: 5px 11px;
+	text-align: center;
+
+	h1.qf-admin-sidebar-heading {
+		position: relative;
+		display: inline-block;
+		background: linear-gradient(42deg ,#fa2a9d,#0092cf);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+		margin-top: 10px;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	h1.qf-admin-sidebar-heading:after{
+		position: absolute;
+		width: 130px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: -5px;
+		height: 2px;
+		content: "";
+		display: block;
+		background: linear-gradient(42deg,#fa2a9d,#0092cf);
+	}
+
+	.qf-admin-sidebar-nav-items {
+		margin-top: 30px;
+		text-align: left;
+		.qf-admin-sidebar-nav-item {
+			display: flex !important;
+			flex-wrap: wrap;
+			align-items: center;
+			text-decoration: none;
+			padding:  13px;
+			margin: 10px 0;
+			font-size: 15px;
+			color: #67748e;
+
+			&.selected {
+				font-weight: 600;
+				background: #fff;
+				box-shadow: 0 10px 12px 0 rgb(0 0 0 / 5%);
+				border-radius: 0.5rem;
+				color: #000 !important;
+
+				.qf-admin-sidebar-nav-item__icon {
+					background-image: linear-gradient(310deg,#cb0c9f,#cb0c9f);
+					color: #fff;
+					svg {
+						fill: #fff;
+						color: #fff;
+						path {
+							stroke: #fff !important;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	.qf-admin-sidebar-nav-item__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0.5rem;
+		border-radius: 0.5rem;
+		width: 32px;
+		height: 32px;
+		background: #fff;
+		box-shadow: 0 .25rem .375rem -.0625rem hsla(0,0%,8%,.12),0 .125rem .25rem -.0625rem hsla(0,0%,8%,.07)!important;
+	}
+	.qf-admin-sidebar-nav-item__icon svg {
+		width: 14px;
+		height: 14px;
+	}
+}
+
+
+.qf-admin-account-summary {
+	box-shadow: 0 10px 12px 0 rgba(0,0,0,.05);
+	 padding: 10px;
+	 margin-top: 20px;
+	 background: #fff;
+	 border-radius: 10px;
+	.qf-admin-account-summary__content {
+		h3 {
+			font-size: 14px;
+			font-weight: normal
+		}
+	}
+	.qf-admin-account-summary__reset-date {
+		font-size: 10px;
+		color: #67748e;
+	}
+	 
+ }

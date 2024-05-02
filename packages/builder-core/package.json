@@ -1,0 +1,51 @@
+{
+	"name": "@quillforms/builder-core",
+	"version": "4.0.37",
+	"description": "Builder Core for Quill Forms",
+	"author": "Mohamed Magdy <md.magdy.sa@gmail.com> (https://github.com/mdmag)",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"quillforms",
+		"builder",
+		"core"
+	],
+	"homepage": "https://github.com/quillforms/quillforms/tree/master/packages/builder-core/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/quillforms/quillforms.git",
+		"directory": "packages/builder-core"
+	},
+	"bugs": {
+		"url": "https://github.com/quillforms/quillforms/issues"
+	},
+	"main": "build/index.js",
+	"module": "build-module/index.js",
+	"types": "build-types",
+	"dependencies": {
+		"@babel/runtime": "^7.16.0",
+		"@quillforms/admin-components": "^3.0.36",
+		"@quillforms/block-editor": "file:../block-editor",
+		"@quillforms/blocks": "^4.1.6",
+		"@quillforms/builder-panels": "^4.0.28",
+		"@quillforms/renderer-core": "^5.9.0",
+		"@quillforms/theme-editor": "^3.0.38",
+		"@quillforms/types": "^3.0.19",
+		"@wordpress/data": "^9.2.0",
+		"classnames": "^2.3.1",
+		"emotion": "^11.0.0",
+		"framer-motion": "^4.1.17",
+		"lodash": "^4.17.21",
+		"react-confirm-alert": "^2.7.0",
+		"react-dnd": "15.1.2",
+		"react-loader-spinner": "^5.3.4",
+		"uuid": "^3.3.2"
+	},
+	"peerDependencies": {
+		"react": "^16.8.5 || ^17.0.0 || ^18.0.0",
+		"react-dom": "^16.8.5 || ^17.0.0 || ^18.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+}

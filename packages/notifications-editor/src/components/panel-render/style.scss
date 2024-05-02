@@ -1,0 +1,43 @@
+.notifications-editor-panel-render.active-slide-1 .slick-list {
+	height: auto !important;
+}
+.notifications-editor-panel-render {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    margin-right: -18px;
+    margin-left: -18px;
+    margin-top: -18px;
+    margin-bottom: -18px;
+
+	.notifications-editor-notifciations-list {
+		&.active {
+			overflow-x: hidden;
+		}
+		&:not(.active) {
+			transform: translateX(-120%);
+			opacity: 0.3;
+		}
+	}
+
+	.notifications-editor-notification-editor-wrapper:not(.active ) {
+		transform: translateX(120%);
+		opacity: 0.3;
+	}
+
+	.notifications-editor-notifciations-list, .notifications-editor-notification-editor-wrapper {
+		transition: all 0.5s ease-in-out;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right:0;
+		left:0;
+		width: 100%;
+		padding: 18px;
+
+		&:not(.active):not(.is-animating) {
+			display: none;
+		}
+	}
+}
